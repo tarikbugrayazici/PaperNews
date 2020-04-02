@@ -1,0 +1,2 @@
+rootProject.name='PaperNews'
+include ':app'

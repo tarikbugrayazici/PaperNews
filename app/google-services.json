@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "883382566579",
+    "firebase_url": "https://papernews-b415b.firebaseio.com",
+    "project_id": "papernews-b415b",
+    "storage_bucket": "papernews-b415b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883382566579:android:7aa41c239760eea460bac6",
+        "android_client_info": {
+          "package_name": "com.example.papernews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883382566579-2p2uebdqallluki05h722s45vor70es8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.papernews",
+            "certificate_hash": "1d1dfe8c9db71bc973becf535e9702c850b24f7d"
+          }
+        },
+        {
+          "client_id": "883382566579-4sp3kl10nsb70v639o3krta428i5cco8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbox5gPT11YleRF74bgIk2xrqRvNnZo3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883382566579-4sp3kl10nsb70v639o3krta428i5cco8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
