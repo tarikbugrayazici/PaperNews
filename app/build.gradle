@@ -10,6 +10,7 @@ android {
             storeFile file('C:\\Users\\Tarik\\papernews.jks')
             keyAlias = 'key0'
             keyPassword '19941994'
+
         }
     }
     compileSdkVersion 29

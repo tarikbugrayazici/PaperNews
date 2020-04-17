@@ -23,6 +23,7 @@ data class Sources(
     @ColumnInfo(name = "language")
     var language: String? = null,
     @ColumnInfo(name = "country")
-    var country: String? = null
+    var country: String? = null,
+    var isFavorite: Boolean = false
 
 )

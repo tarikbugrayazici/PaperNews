@@ -15,14 +15,15 @@
         <activity android:name=".ui.dashboard.AuthenticationActivity"></activity>
         <activity
             android:name=".ui.dashboard.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".ui.topHeadlinesActivity.view.TopHeadlinesActivity" />
-        <activity android:name=".ui.dashboard.SplashScreenActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".ui.topHeadlinesActivity.view.TopHeadlinesActivity" />
+        <activity android:name=".ui.dashboard.SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 

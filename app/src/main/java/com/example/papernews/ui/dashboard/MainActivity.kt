@@ -1,20 +1,20 @@
 package com.example.papernews.ui.dashboard
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
-import com.bumptech.glide.Glide
+import androidx.fragment.app.FragmentTransaction
 import com.example.papernews.R
+import com.example.papernews.ui.navigationFragments.view.FavoriteFragment
 import com.example.papernews.ui.navigationFragments.view.SearchFragment
 import com.example.papernews.ui.navigationFragments.view.SourceFragment
 import com.facebook.stetho.Stetho
 import com.firebase.ui.auth.AuthUI
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.nav_header.*
 import kotlinx.android.synthetic.main.nav_header.view.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         SourceFragment()
     val searchFragment =
         SearchFragment()
+    val favoriteFragment =
+        FavoriteFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,12 +54,17 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 .replace(
                     R.id.frameContainer, sourceFragment
                 )
-                .setTransition(androidx.fragment.app.FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                 .commit()
             R.id.navSearch -> supportFragmentManager
                 .beginTransaction()
                 .replace(R.id.frameContainer, searchFragment)
-                .setTransition(androidx.fragment.app.FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+                .commit()
+            R.id.navFavorite -> supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.frameContainer, favoriteFragment)
+                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                 .commit()
             R.id.navLogout ->
                 logOut()
@@ -84,7 +91,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             .replace(
                 R.id.frameContainer, sourceFragment
             )
-            .setTransition(androidx.fragment.app.FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
             .commit()
     }
 
