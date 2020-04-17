@@ -53,6 +53,6 @@ class SourceFragment : Fragment() {
         } else {
             newsRepository.updateList(news)
         }
-        newsRepository.getFromDatabaseAll()
+     //   newsRepository.getFromDatabaseAll()
     }
 }

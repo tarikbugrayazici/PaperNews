@@ -5,14 +5,7 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    signingConfigs {
-        release {
-            storeFile file('C:\\Users\\Tarik\\papernews.jks')
-            keyAlias = 'key0'
-            keyPassword '19941994'
 
-        }
-    }
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
